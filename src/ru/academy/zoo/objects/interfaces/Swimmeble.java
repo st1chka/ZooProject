@@ -1,4 +1,4 @@
-package ru.academy.zoo.objects;
+package ru.academy.zoo.objects.interfaces;
 
 public interface Swimmeble {
 

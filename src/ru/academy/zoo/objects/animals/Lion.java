@@ -1,8 +1,10 @@
-package ru.academy.zoo.objects;
+package ru.academy.zoo.objects.animals;
 
 import ru.academy.zoo.exceptions.AgeException;
+import ru.academy.zoo.objects.Animal;
+import ru.academy.zoo.objects.interfaces.Dangerous;
 
-public class Lion extends Animal implements Dangerous{
+public class Lion extends Animal implements Dangerous {
 
     public Lion(String name_, int age_) throws AgeException {
         super(name_, age_);

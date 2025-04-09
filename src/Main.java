@@ -3,7 +3,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.config.Configurator;
 import ru.academy.zoo.exceptions.AgeException;
-import ru.academy.zoo.objects.Lion;
+import ru.academy.zoo.objects.Animal;
+import ru.academy.zoo.objects.animals.Lion;
+import ru.academy.zoo.objects.interfaces.Dangerous;
 
 public class Main {
 
@@ -14,7 +16,7 @@ public class Main {
         Configurator.setRootLevel(Level.ERROR);
 
         try {
-            Lion lion = new Lion("Лёва", -10);
+            Animal lion = new Lion("Лёва", 10);
         } catch (AgeException e) {
 
             log.error("Ошибка", e);
