@@ -17,6 +17,7 @@ public class Main {
 
         try {
             Animal lion = new Lion("Лёва", 10);
+            System.out.println(lion.getAge());
         } catch (AgeException e) {
 
             log.error("Ошибка", e);
